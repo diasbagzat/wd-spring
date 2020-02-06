@@ -1,0 +1,146 @@
+body {
+    background-color: #e7ebf0;
+    margin: 0px;
+}
+.top {
+    position: absolute;
+    display: block;
+    
+     background-color: #5682a3;
+     width: 99%;
+     height: 30%;
+     padding: 0px;
+}
+.login {
+    text-align: center;
+}
+#login-form {
+    position: absolute;
+    top: 10%;
+    left: 39%;
+  margin-left: -50px;
+    width: 26%;
+    height: 60%;
+    background-color: white;
+}
+
+.login-top {
+       background-color: #5682a3    ;
+        height: 20%;
+}
+
+h3 {
+    font-family:sans-serif; 
+    font-size: 16px;
+    font-weight: 750;
+}
+.login-in {
+    position: absolute;
+    top: 30%;
+    left: 28%;
+  margin-left: -50px;
+    width: 70%;
+    height: 60%;
+   
+}
+.login-form-text{
+    color: #999;
+    margin: 15px 0 25px;
+    font-size: 13px;
+    line-height: 160%;
+    font-family: Tahoma;
+
+}
+
+.login-in label {
+    
+    color: #999;
+    display: block;
+    font-size: 13px;
+    font-family: Tahoma;
+    margin-bottom: 10px;
+}
+#phone-label {
+    position: absolute;
+    bottom: 15%;
+   left: 40%;
+}
+.login-in select {
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.code {
+    width: 17%;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+}
+.phone {
+    margin-left: 60px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+}
+.next {
+   position: absolute;
+   left: 80%;
+}
+
+a {
+    font-family: Tahoma;
+    height: 20%;
+    font-size: 14px;
+    padding-top: 27px;
+    padding-right: 15px;
+    padding-bottom: 28px;
+    padding-left: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+}
+.login-top img {
+    position: absolute;
+    top: 9.5%;
+    width: 30px;
+    height: 25px;
+}
+.telegram {
+    position: absolute;
+    left: 12%;
+    bottom: 67%;
+}
+
+.footer {
+    position: absolute;
+    left: 34%;
+    top: 70%;
+    width: 30%;
+    height: 30%;
+
+}
+.footer p {
+    color: #84a2bc;
+    font-size: 13px;
+    font-family: Tahoma;
+    line-height: 16px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.footer a{
+    position: absolute;
+    color: #84a2bc;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 13px;
+
+    left: 38%;
+    top: 12%;
+}

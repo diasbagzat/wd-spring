@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <title>Facebook</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <a href="https://www.facebook.com/" class="logo">
+                <img src="face.png" alt="logo" width="200px" height="75px">
+                </a>
+                <div class="login-form">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label>Электронный адрес или номер телефона</label></td>
+                                <td><label>Пароль</label></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="input-text" type="email" name="email" required >
+                                </td>
+                                <td>
+                                    <input class="input-text" type="password" name="pass" required >
+                                </td>
+                                <td>
+                                    <input class="input-sub" type="submit" name="login" value="Вход">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><a class="input-a" href="">Забыли аккаунт?</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+           
+            <div class="left-block">
+                <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+                <img src="face2.png" alt="network">
+
+            </div>
+
+            <div class="registration">
+                <h1>Регистрация</h1>
+                <h3>Быстро и легко.</h3>
+                <form class="reg-form">
+                    <input class="input-name" type="text" placeholder="Имя" name="firstname" required>
+
+                    <input class="input-surname" type="text" placeholder="Фамилия" name="Surname" required>
+
+                    <input class="input-long" type="text" placeholder="Номер мобильного телефона или эл. адрес" name="email" required>
+
+                    <input class="input-long2" type="password" placeholder="Новый пароль" name="pass" required>
+
+                </form>
+
+                <h2 class="birth">Дата рождения</h2>
+
+                <span class="birthdate">
+                    <select>
+
+                        <option value="День">День</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+
+                    </select>
+                    <select style="position: absolute; left: 75px;">
+                        <option value="Месяц">Месяц</option>
+                        <option value="янв">янв</option>
+                        <option value="фев">фев</option>
+                        <option value="мар">мар</option>
+                        <option value="апр">апр</option>
+                        <option value="май">май</option>
+                        <option value="июн">июн</option>
+                        <option value="июл">июл</option>
+                        <option value="авг">авг</option>
+                        <option value="сен">сен</option>
+                        <option value="окт">окт</option>
+                        <option value="ноя">ноя</option>
+                        <option value="дек">дек</option>
+                    </select>
+                    <select style="position: absolute; left: 150px;">
+                        <option value="0">Год</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                    </select>
+                    <div class="supp">
+                    <a href="">?</a>
+                    </div>
+                </span>
+                
+                
+                 
+                <span class="gender">
+                    <h2>Пол</h2>
+                    <input type="radio"  name="Male" value="Male">
+                    <label for="gender">Мужчина</label>
+                    <input type="radio"  name="Female" value="Female">
+                    <label for="gender">Женщина</label>
+                    <input type="radio"  name="Other" value="Other">
+                    <label for="gender">Другое</label>
+                </span>
+
+                <div class="agr">
+                     <p>Нажимая кнопку Регистрация, вы принимаете <a href="">Условия</a>, <a href="">Политику использования данных</a> и <a href="">Политику в отношении файлов cookie.</a> Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент.</p>
+                </div>
+
+                <div class="button-reg">
+                   <button type="submit" name="registr">Регистрация</button>
+                </div>
+                <span class="bot-text">
+                    <p><a href="">Создать Страницу</a> знаменитости, музыкальной группы или<br> компании.</p>
+                </span>
+            </div>
+
+            <div class="footer">
+                <nav>
+                    <a href="">Русский</a>
+                    <a href="">English (US)</a>
+                    <a href="">Türkçe</a>
+                    <a href="">Bahasa Indonesia</a>
+                    <a href="">Қазақша</a>
+                    <a href="">한국어
+                    </a>
+                    <a href="">Español
+                    </a>
+                    <a href="">Português (Brasil)
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </body>
+</html>

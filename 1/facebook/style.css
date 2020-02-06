@@ -1,0 +1,302 @@
+body {
+    margin: 0px;
+    background-color: rgb(223, 228, 243);
+}
+.container {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+.top {
+    position: absolute;
+    width: 100%;
+    height: 11%;
+    background-color: #385898;
+    z-index: 2;
+}
+a{
+    cursor: pointer;
+}
+.logo {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 8px;
+}
+
+.login-form {
+    position: absolute;
+    margin-left: 780px;
+}
+.login-form label {
+    color: #fff;
+    font-weight: normal;
+    font-family: Helvetica;
+    font-size: 12px;
+}
+.login-form table {
+    margin-top: 7px;
+}
+.login-form td {
+    padding-left: 10px;
+}
+
+.input-text {
+    width: 150px;
+    border: 1px solid black;
+    height: 19px;
+}
+
+.input-sub {
+    background-color: #4267b2;
+    border-radius: 2px;
+    border: 1px solid #29487d ;
+    cursor: pointer;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    color: white;
+}
+.input-sub:hover {
+    background-color: #385898;
+}
+
+.input-a{
+    color: #9cb4d8;
+    font-weight: normal;
+    font-family: Helvetica;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.left-block{
+    position: absolute;
+    top: 12%;
+    width: 55%;
+    height: 82%;
+}
+
+.left-block img {
+    position: absolute;
+    left: 270px;
+    top: 90px;
+}
+
+.left-block p {
+    position: absolute;
+    left: 270px;
+    color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-top: 30px;
+    width: 450px;
+    word-spacing: -1px;
+    font-family: Helvetica;
+}
+
+.registration {
+    position: absolute;
+    top: 12%;
+    width: 45%;
+    height: 82%;
+    left: 55%;
+}
+
+.registration h1 {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: Helvetica;
+    font-size: 36px;
+    color: #333;
+    font-weight: 600;
+
+}
+
+.registration h3 {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 11px;
+    font-family: Helvetica;
+    color: #1d2129;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.registration h2 {
+    color: #90949c;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.birth {
+    position: absolute;
+    left: 15px;
+    top: 265px;
+}
+
+.reg-form input{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 11px;
+    border-radius: 5px;
+    border: 1px solid #bdc7d8;
+    height: 23px;
+    color: #999;
+    font-family: Helvetica;
+    font-size: 18px;
+    padding: 8px 10px ;
+    
+}
+
+.input-name{
+    width: 176px;
+}
+
+.input-surname {
+    position: absolute;
+    left: 210px;
+    width: 176px;
+}
+
+.input-long {
+    position: absolute;
+    top: 50px;
+    width: 387px;
+}
+
+.input-long2 {
+    position: absolute;
+    top: 100px;
+    width: 387px;
+}
+
+.birthdate {
+    position: absolute;
+    top:302px;
+    left: 14px;
+}
+.birthdate select{
+    position: absolute;
+    height: 30px;
+    width: 75px;
+    border: 1px solid #ccd0d5;
+}
+
+.supp {
+    margin-top: 5px;
+    margin-left: 240px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: grey;
+    width: 18px;
+    height: 18px;
+}
+.supp a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.gender {
+    position: absolute;
+    top: 335px;
+    left: 16px;
+}
+
+.gender label {
+    color: #1d2129;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 18px;
+    padding: 0 10px 0 3px;
+}
+
+.agr {
+    position: absolute;
+    top:400px;
+    left: 16px;
+}
+
+.agr p {
+    color: #777;
+    font-size: 11px;
+    width: 316px;
+    font-family: Helvetica;
+    line-height: 1.5;
+}
+
+.agr a {
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-reg {
+    position: absolute;
+    top: 500px;
+    left: 16px;
+}
+
+.button-reg button {
+    background-color: #69a74e;
+    min-width: 194px;
+    padding: 7px 20px;
+    text-align: center;
+    border: 1px solid #3b6e22;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.bot-text {
+    position: absolute;
+    top: 550px;
+    left: 16px;
+    font-family: Helvetica;
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.34;
+}
+
+.bot-text a {
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer {
+    position: absolute;
+    top: 94%;
+    width: 100%;
+    height: 23%;
+    background-color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer a {
+    color: #385898;
+    cursor: pointer;
+    font-family: Helvetica;
+    text-decoration: none;
+    font-size: 13px;
+
+    padding-right: 9px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

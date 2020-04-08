@@ -7,7 +7,17 @@
     align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+  .topnav-left {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;    
+      align-items: baseline;
+      margin-right: 20%;
+      margin-bottom: 0;
+      margin-top: 0.25%;
+      width: 60%;
 
+  }
 
   .pic img {
       
@@ -21,7 +31,7 @@
       justify-content: center;    
       align-items: baseline;
       margin-left: 5%;
-      margin-bottom: 2%;
+      margin-bottom: 1%;
       width: 60%;
   }
   .topnav-center hr {

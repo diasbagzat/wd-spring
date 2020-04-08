@@ -12,6 +12,9 @@ import { NgImageSliderComponent } from 'ng-image-slider';
 })
 export class CategoriesComponent implements OnInit {
   categories: Category[];
+
+  images = ['../../assets/banner4.jpg','../../assets/banner5.jpg', '../../assets/interior_casual_he_0220.webp']
+
   imageObject: Array<object> = [{
     image: 'assets/jeans.jpg',
     thumbImage: 'assets/lacoste.jpg',

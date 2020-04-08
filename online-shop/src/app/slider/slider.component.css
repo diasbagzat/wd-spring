@@ -4,9 +4,6 @@
 
 .slider{
     margin-left: 156px;
+    display: flex;
     width: 1210px;
-}
-
-.slider-content {
-
 }

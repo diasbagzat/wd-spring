@@ -6,6 +6,11 @@
 
 }
 
+
+.slider-content {
+    width: 100%;
+}
+
 .title {
     width: 100%;
     text-align: center;
@@ -86,9 +91,9 @@ hr {
 }
 
 .carousel {
-    margin-top: 5%;
-    margin-left: 15%;
-    width: 70%;
+    margin-top: 1%;
+    margin-left: 10%;
+    width: 80%;
 }
 
 .title2 h3{

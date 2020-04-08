@@ -11,13 +11,17 @@
 
   .pic img {
       
-      width: 20px;
-      height: 20px;
+      width: 1%;
+      height: 1%;
   }
 
   .topnav-center {
-    text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;    
+      align-items: baseline;
       margin-left: 5%;
+      margin-bottom: 2%;
       width: 60%;
   }
   .topnav-center hr {
@@ -149,6 +153,7 @@
     flex-direction: row; 
     justify-content: center; 
     align-items: center;
+    flex-wrap: nowrap;
     width: 80%;
     height: 40%;
     margin-top: -5px;

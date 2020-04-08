@@ -1,11 +1,36 @@
+<div class="sale"><p>По 9 апреля: Скидки до 40%</p></div>
+<div class="path">
+<p><a href="#">Главная</a>/<a href="">{{category.name}}</a></p>
+</div>
+
 <h2>{{category.name}}</h2>
+
+<div class="filter">
+    <form action="">
+        <label>Цена:</label>
+        <input type="text" name="price" placeholder="5000"/>
+        <b>-</b>
+        <input type="text" name="price" placeholder="20000"/>
+        <span>
+            <select>
+                <option>черный</option>
+                <option>красный</option>
+                <option>белый</option>
+                <option>синий</option>
+                <option>зеленый</option>
+                <option>желтый</option>
+            </select>
+        </span>
+    </form>
+</div>
+
 <div class="container">
 
 <div *ngFor="let product of products; index as productId">
     <div *ngIf="product.categoryId==category.id">
         <div class="content">
-       
             <img src="{{product.image}}">
+            <div class="text-content">
             <h5 *ngIf="product.price" id="price">
                 Price: {{product.price}} KZT
             </h5>
@@ -15,8 +40,20 @@
             <p *ngIf="product.description">
                 <b>Размер:</b> {{ product.size }}
             </p>
-            
+            </div>
         </div>
     </div>
 </div>
+
+
+</div>
+
+<div class="category">
+    <h6>Категории</h6>
+    <div *ngFor="let category of categories index as id " class="category-list">
+        <ul>
+        <li><a routerLink="/categoryList/{{category.id}}">{{category.name}}</a></li>
+        </ul>
+      
+    </div>
 </div>

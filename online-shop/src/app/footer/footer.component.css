@@ -1,12 +1,14 @@
 .container {
-    margin-top: 20px;
+    margin-top: 5%;
     background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-
+hr {
+    margin-top: 5%;
+}
 .help {
     display: grid;
 }

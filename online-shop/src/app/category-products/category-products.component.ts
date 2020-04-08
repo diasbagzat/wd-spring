@@ -13,6 +13,7 @@ import { Location } from '@angular/common';
 })
 export class CategoryProductsComponent implements OnInit {
 
+  categories: Category[];
   @Input() category:Category;
   products=products;
   constructor(private route: ActivatedRoute,
@@ -25,9 +26,14 @@ export class CategoryProductsComponent implements OnInit {
     this._categoriesService.getCategory(id)
       .subscribe(category => this.category =category);
   }
+  getCategories(): void{
+    this._categoriesService.getCategories().subscribe(categories=>this.categories=categories);
+  }
+
   ngOnInit(): void {
     console.log(this.route);
     this.getCategory();
+    this.getCategories();
   }
 
 }

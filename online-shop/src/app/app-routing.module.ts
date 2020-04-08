@@ -5,8 +5,8 @@ import {CategoryProductsComponent} from './category-products/category-products.c
 
 
 const routes: Routes = [
-  { path: 'categories', component: CategoriesComponent },
-  { path: '', redirectTo: 'categories', pathMatch: 'full' },
+  { path: 'main', component: CategoriesComponent },
+  { path: '', redirectTo: 'main', pathMatch: 'full' },
   { path: 'categoryList/:id', component: CategoryProductsComponent },
 ];
 

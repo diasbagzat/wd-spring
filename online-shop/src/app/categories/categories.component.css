@@ -47,6 +47,11 @@
     height: 50px;
     background-color: black;
 }
+
+.category-name  a{
+     color: white;
+}
+
 .category-list h5:hover , .category-name:hover {
     cursor: pointer;
     text-decoration: underline;

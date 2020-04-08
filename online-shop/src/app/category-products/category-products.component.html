@@ -1,0 +1,22 @@
+<h2>{{category.name}}</h2>
+<div class="container">
+
+<div *ngFor="let product of products; index as productId">
+    <div *ngIf="product.categoryId==category.id">
+        <div class="content">
+       
+            <img src="{{product.image}}">
+            <h5 *ngIf="product.price" id="price">
+                Price: {{product.price}} KZT
+            </h5>
+            <a  [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+                <h6>{{product.name}}</h6>
+                </a>
+            <p *ngIf="product.description">
+                <b>Размер:</b> {{ product.size }}
+            </p>
+            
+        </div>
+    </div>
+</div>
+</div>

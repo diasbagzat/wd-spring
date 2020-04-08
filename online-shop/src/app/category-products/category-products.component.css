@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    width: 60%;
+    height: 1000px;
+    margin-top: 50px;
+}
+
+.content {
+    
+    width: 202px;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.content img {
+    width: 200px;
+    height: 300px;
+}
+
+.content a {
+    text-decoration: none;
+    color: gray;
+}

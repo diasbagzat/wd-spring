@@ -1,0 +1,56 @@
+.container {
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.help {
+    display: grid;
+}
+
+.help a {
+    color: grey;
+
+}
+
+.help a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.socnet {
+    display: inline;
+}
+
+.payment {
+    width: 15%;
+}
+
+.payment p {
+    font-size: 14px;
+}
+
+.mob-app {
+    width: 20%;
+}
+
+.mob-app img {
+    width: 100px;
+    margin-left: 5px;
+    height: 100px;
+}
+
+
+.bot {
+    width: 30%;
+   margin-left: 10%;
+   margin-bottom: 20px;
+}
+
+.bot p {
+    font-size: 14px;
+    color: gray;
+}

@@ -4,6 +4,7 @@ import {Component, OnInit} from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgImageSliderModule } from 'ng-image-slider';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
@@ -12,6 +13,9 @@ import { SliderComponent } from './slider/slider.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { FooterComponent } from './footer/footer.component';
 import { CategoryProductsComponent } from './category-products/category-products.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,9 @@ import { CategoryProductsComponent } from './category-products/category-products
     SliderComponent,
     CategoriesComponent,
     FooterComponent,
-    CategoryProductsComponent
+    CategoryProductsComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

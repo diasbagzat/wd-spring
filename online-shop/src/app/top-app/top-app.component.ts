@@ -17,4 +17,5 @@ export class TopAppComponent implements OnInit {
   ngOnInit(): void {
     this.getCategories();
   }
+  
 }

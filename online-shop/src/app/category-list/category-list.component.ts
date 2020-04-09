@@ -1,21 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import {Category} from '../category';
 import {CategoriesService} from '../categories.service';
+import {Category} from '../category';
 import {products, Product} from '../product';
 
-
 @Component({
-  selector: 'app-categories',
-  templateUrl: './categories.component.html',
-  styleUrls: ['./categories.component.css']
+  selector: 'app-category-list',
+  templateUrl: './category-list.component.html',
+  styleUrls: ['./category-list.component.css']
 })
-export class CategoriesComponent implements OnInit {
-  categories: Category[];
+export class CategoryListComponent implements OnInit {
+
   products = products;
+  categories: Category[];
 
-  images = ['../../assets/banner4.jpg','../../assets/banner5.jpg', '../../assets/interior_casual_he_0220.webp']
-
-  
   constructor(private categoryService: CategoriesService) { }
   getCategories(): void{
     this.categoryService.getCategories().subscribe(categories=>this.categories=categories);

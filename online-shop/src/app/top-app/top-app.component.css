@@ -25,18 +25,9 @@
       height: 1%;
   }
 
-  .topnav-center {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;    
-      align-items: baseline;
-      margin-left: 5%;
-      margin-bottom: 1%;
-      width: 60%;
-  }
-  .topnav-center hr {
-    width: 100%;
-  }
+  
+  
+  
 
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -65,8 +56,8 @@
     float: left;
     overflow: hidden;
     text-align: center;
-    margin-left: 20px;
-    width: 100px;
+    margin-left: 0px;
+    width: 120px;
   }
   
   .dropdown:hover {
@@ -88,7 +79,7 @@
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: black;
-    color: rgb(163, 159, 159);
+    color: white;
     
   }
   
@@ -98,7 +89,7 @@
     border-radius: 5px;
     position: absolute;
     background-color: #f9f9f9;
-    
+    padding-left: 25px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -117,6 +108,7 @@
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
+    color:white;
     background-color: red;
   }
   
@@ -152,16 +144,17 @@
   .pic img {
     margin-right: 5px;
     margin-top: 2px;
-      width: 30px;
+      width: 25px;
       height: 20px;
   }
 
   .sign {
-    width: 40%;
+    width: 90px;
     font-size: 13px;
     margin-left: 1%;
     padding: 0px;
   }
+
 
   
   .search {
@@ -170,12 +163,11 @@
     justify-content: center; 
     align-items: center;
     flex-wrap: nowrap;
-    padding: 1%;
+    padding: 40px;
     width: 100%;
     height: 40%;
     background-color:black;
-    border-radius: 5px;
-    box-shadow: 0 5px 0 rgba(196, 188, 188, 0.76);
+    
   }
 
   .input-field {
@@ -183,7 +175,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 13%;
+    margin-left: 5%;
     background-color: white;
     border-radius: 6px;
   }
@@ -216,7 +208,7 @@
   .search input {
      border: 1px;
     padding-left: 10px;
-    width: 400px;
+    width: 300px;
     height: 30px;
     border-radius: 6px;
   }
@@ -253,6 +245,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.text a {
+  width: 100px;
+  margin-left: -15px;
+  margin-right: 0px;
 }
 
 .text a:hover {

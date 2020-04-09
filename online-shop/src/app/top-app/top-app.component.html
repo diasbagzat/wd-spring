@@ -27,9 +27,9 @@
     <div class="search">
       <span class="logo"><img src="./assets/logo.png"/></span>
       <div class="text">
-      <a class="active" routerLink="/main">Home</a>
+      <a class="active" routerLink="/main">Главная</a>
       <div class="dropdown">
-        <button class="dropbtn">Category <i class="fa fa-caret-down" aria-hidden="true"></i>
+        <button class="dropbtn" routerLink="/categories">Категории<i class="fa fa-caret-down" aria-hidden="true"></i>
         </button>
         <div  class="dropdown-content">
           <div *ngFor="let category of categories index as id " class="category-list">
@@ -40,9 +40,9 @@
         </div>
         </div>
       </div>
-      <a href="#Brands">Brands</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
+      <a href="#Brands">Бренды</a>
+      <a href="#contact">Контакты</a>
+      <a href="#about">О нас</a>
       
       </div>
       <form class="input-field" action="">  
@@ -58,9 +58,9 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
       <div class="pic">
         <img src="./assets/user.png\"/> 
   
-        <button  class="btn btn-sm btn-outline-primary sign" routerLink="/login" >Войти</button>
+        <button  class="btn btn-sm btn-outline-light sign" routerLink="/login" >Войти</button>
               
-        <button class="btn btn-sm btn-outline-primary sign" routerLink="/registration">Регистрация</button>
+        <button class="btn btn-sm btn-outline-light sign" routerLink="/registration">Регистрация</button>
   
       </div>
     </div>

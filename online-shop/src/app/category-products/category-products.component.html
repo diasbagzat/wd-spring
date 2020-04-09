@@ -6,7 +6,11 @@
 <h2>{{category.name}}</h2>
 
 <div class="filter">
+   
     <form action="">
+        <span>
+            <button class="btn btn-danger filtb">Фильтр</button>
+           </span>
         <label>Цена:</label>
         <input type="text" name="price" placeholder="5000"/>
         <b>-</b>
@@ -34,6 +38,7 @@
             </select>
         </span>
     </form>
+   
 </div>
 
 <div class="container">
@@ -44,14 +49,14 @@
             <img src="{{product.image}}">
             <div class="text-content">
             <h5 *ngIf="product.price" id="price">
-                Price: {{product.price}} KZT
+                Цена: {{product.price}} KZT
             </h5>
             <h5 *ngIf="product.oldprice" id="price">
-                Old Price: <del>{{product.oldprice}} KZT </del>
+                Скидка: <del>{{product.oldprice}} KZT </del>
             </h5>
 
-            <a  [title]="product.name + ' details'" [routerLink]="['/products', productId]">
-                <h6>{{product.name}}</h6>
+            <a  [title]="product.title + ' details'" [routerLink]="['/products', productId]">
+                <h6>{{product.title}}</h6>
                 </a>
             <p *ngIf="product.description">
                 <b>Размер:</b> {{ product.size }}

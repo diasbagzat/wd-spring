@@ -16,6 +16,8 @@ import { CategoryProductsComponent } from './category-products/category-products
 import { SignInComponent } from './sign-in/sign-in.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { CategoryListComponent } from './category-list/category-list.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     FooterComponent,
     CategoryProductsComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    CategoryListComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,28 +1,38 @@
 export interface Product {
     id: number;
-    name: string;
+    title: string;
     description: string;
+    shortdesc:string;
+    material:string;
     price: number;
     oldprice: number;
+    sale: string;
+    econom:number;
     size: string;
     categoryId:number;
     image: string;
+    image2:string;
 }
 
 export const products = [
     {
         id: 1,
-        name: 'Adidas',
-        description: "LOL",
-        price: 1000,
-        oldprice: 2000,
+        title: 'Adidas',
+        shortdesc:"Куртка утепленная PARKA PADDE",
+        material:"Нейлон - 100%",
+        description: "Утепленная куртка от спортивного бренда выполнена из плотного текстиля. Модель прямого силуэта. Детали: фиксированный капюшон, воротник-стойка, застежка на молнии с ветрозащитной планкой на липучках; два втачных кармана по бокам, два нагрудных кармана на молнии, внутренний карман на липучке; искусственный утеплитель.",
+        price: 63495,
+        oldprice: 70550,
+        sale: "23%",
+        econom: 7055,
         size: "48/50 52/54  56/58  60/62",
         categoryId: 1,
-        image: "./assets/adidas_kurtka.webp"   
+        image: "./assets/adidas.png",
+        image2: "./assets/adidas2.png" 
     },
     {
         id: 2,
-        name: 'Fila',
+        title: 'Fila',
         description: "LOL",
         price: 2000,
         size: "48/50 52/54  56/58  60/62",
@@ -31,7 +41,7 @@ export const products = [
     },
     {
         id: 3,
-        name: 'Asics',
+        title: 'Asics',
         description: "LOL",
         price: 3000,
         size: "48/50 52/54  56/58  60/62",
@@ -41,7 +51,7 @@ export const products = [
     ,
     {
         id: 4,
-        name: 'Oodji',
+        title: 'Oodji',
         description: "LOL",
         price: 4000,
         oldprice: 7000,
@@ -51,7 +61,7 @@ export const products = [
     },
     {
         id: 5,
-        name: 'Bikkemberg',
+        title: 'Bikkemberg',
         description: "Куртка от премиум-бренда выполнена из мягкой ягнячьей кожи. Модель прямого кроя. Особенности: воротник-стойка, застежка на молнию, два боковых кармана и один карман внутри, трикотажные манжеты и низ.",
         price: 54000,
         size: "48/50 52/54  56/58  60/62",
@@ -60,7 +70,7 @@ export const products = [
     },
     {
         id: 6,
-        name: 'Bikkemberg',
+        title: 'Bikkemberg',
         description: "Куртка от премиум-бренда выполнена из мягкой ягнячьей кожи. Модель прямого кроя. Особенности: воротник-стойка, застежка на молнию, два боковых кармана и один карман внутри, трикотажные манжеты и низ.",
         price: 54000,
         oldprice: 80000,
@@ -70,7 +80,7 @@ export const products = [
     },
     {
         id: 7,
-        name: 'Bikkemberg',
+        title: 'Bikkemberg',
         description: "Куртка от премиум-бренда выполнена из мягкой ягнячьей кожи. Модель прямого кроя. Особенности: воротник-стойка, застежка на молнию, два боковых кармана и один карман внутри, трикотажные манжеты и низ.",
         price: 54000,
         size: "48/50 52/54  56/58  60/62",
@@ -79,7 +89,7 @@ export const products = [
     },
     {
         id: 8,
-        name: 'Bikkemberg',
+        title: 'Bikkemberg',
         description: "Куртка от премиум-бренда выполнена из мягкой ягнячьей кожи. Модель прямого кроя. Особенности: воротник-стойка, застежка на молнию, два боковых кармана и один карман внутри, трикотажные манжеты и низ.",
         price: 54000,
         size: "48/50 52/54  56/58  60/62",

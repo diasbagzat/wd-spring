@@ -29,6 +29,13 @@ export class CategoryProductsComponent implements OnInit {
   getCategories(): void{
     this._categoriesService.getCategories().subscribe(categories=>this.categories=categories);
   }
+  like() {
+    window.alert('liked')
+  }
+  dislike() {
+    window.alert('disliked')
+  }
+ 
 
   ngOnInit(): void {
     console.log(this.route);

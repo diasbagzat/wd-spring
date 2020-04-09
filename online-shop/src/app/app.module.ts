@@ -14,7 +14,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { FooterComponent } from './footer/footer.component';
 import { CategoryProductsComponent } from './category-products/category-products.component';
 import { SignInComponent } from './sign-in/sign-in.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
@@ -34,6 +34,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     AppRoutingModule,
     NgbModule,
     NgImageSliderModule,
+    NoopAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

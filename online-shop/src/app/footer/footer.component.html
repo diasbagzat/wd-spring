@@ -57,8 +57,8 @@
         </div>
         <h5>Subscribe</h5>
         <form action="">
-            <input type="email" class="form-control">
-            <button class="btn btn-primary mt-2 ">SEND</button>
+            <input type="email" class="form-control" value="qwerty@gmail.com" onfocus="if (this.value=='qwerty@gmail.com') this.value='';">
+            <button class="btn btn-primary mt-2 " (click)="subscribe()">SEND</button>
         </form>
     </div>
 

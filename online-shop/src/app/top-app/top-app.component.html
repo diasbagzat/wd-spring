@@ -1,4 +1,21 @@
 <div class="topnav">
+  <div class="topnav-left">
+  <form>
+    <table>
+        <tr>
+            <td>
+                <i class="fas fa-city"></i><label>Ваш регион:</label>
+                <select class="country">
+                    <option>Выбрать</option>
+                    <option value="almaty">Алматы</option>
+                    <option value="nur-Sultan">Нур-Султан</option>
+                    <option value="taraz">Тараз</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+  </form>
+  </div>
     
     <div class="topnav-center">
       
@@ -12,7 +29,7 @@
       <div class="text">
       <a class="active" routerLink="/main">Home</a>
       <div class="dropdown">
-        <button class="dropbtn">Category ⯆
+        <button class="dropbtn">Category <i class="fa fa-caret-down" aria-hidden="true"></i>
         </button>
         <div  class="dropdown-content">
           <div *ngFor="let category of categories index as id " class="category-list">

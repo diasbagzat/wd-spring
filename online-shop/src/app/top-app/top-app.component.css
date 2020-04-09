@@ -7,7 +7,17 @@
     align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+  .topnav-left {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;    
+      align-items: baseline;
+      margin-right: 20%;
+      margin-bottom: 0;
+      margin-top: 0.25%;
+      width: 60%;
 
+  }
 
   .pic img {
       
@@ -15,7 +25,22 @@
       height: 1%;
   }
 
+<<<<<<< HEAD
  
+=======
+  .topnav-center {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;    
+      align-items: baseline;
+      margin-left: 5%;
+      margin-bottom: 1%;
+      width: 60%;
+  }
+  .topnav-center hr {
+    width: 100%;
+  }
+>>>>>>> 337b0e6d4a3ac3458002088f81f7c0949138a79f
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;

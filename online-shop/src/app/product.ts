@@ -3,6 +3,7 @@ export interface Product {
     name: string;
     description: string;
     price: number;
+    oldprice: number;
     size: string;
     categoryId:number;
     image: string;
@@ -14,6 +15,7 @@ export const products = [
         name: 'Adidas',
         description: "LOL",
         price: 1000,
+        oldprice: 2000,
         size: "48/50 52/54  56/58  60/62",
         categoryId: 1,
         image: "./assets/adidas_kurtka.webp"   
@@ -42,6 +44,7 @@ export const products = [
         name: 'Oodji',
         description: "LOL",
         price: 4000,
+        oldprice: 7000,
         size: "48/50 52/54  56/58  60/62",
         categoryId: 1,
         image: "./assets/oodji_kurtka.webp" 
@@ -60,6 +63,7 @@ export const products = [
         name: 'Bikkemberg',
         description: "Куртка от премиум-бренда выполнена из мягкой ягнячьей кожи. Модель прямого кроя. Особенности: воротник-стойка, застежка на молнию, два боковых кармана и один карман внутри, трикотажные манжеты и низ.",
         price: 54000,
+        oldprice: 80000,
         size: "48/50 52/54  56/58  60/62",
         categoryId: 1,
         image: "./assets/bikkemberg_kurtka.webp" 

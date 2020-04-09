@@ -46,6 +46,10 @@
             <h5 *ngIf="product.price" id="price">
                 Price: {{product.price}} KZT
             </h5>
+            <h5 *ngIf="product.oldprice" id="price">
+                Old Price: <del>{{product.oldprice}} KZT </del>
+            </h5>
+
             <a  [title]="product.name + ' details'" [routerLink]="['/products', productId]">
                 <h6>{{product.name}}</h6>
                 </a>

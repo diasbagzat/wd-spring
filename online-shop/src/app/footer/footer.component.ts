@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   constructor() { }
+  subscribe() {
+    window.alert('You have been subscribed')
+  }
 
   ngOnInit(): void {
   }

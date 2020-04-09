@@ -2,16 +2,16 @@ export interface Product {
     id: number;
     title: string;
     description: string;
-    shortdesc:string;
-    material:string;
+    shortdesc: string;
+    material: string;
     price: number;
     oldprice: number;
     sale: string;
-    econom:number;
+    econom: number;
     size: string;
-    categoryId:number;
+    categoryId: number;
     image: string;
-    image2:string;
+    image2: string;
 }
 
 export const products = [
@@ -28,7 +28,7 @@ export const products = [
         size: "48/50 52/54  56/58  60/62",
         categoryId: 1,
         image: "./assets/adidas.png",
-        image2: "./assets/adidas2.png" 
+        image2: "./assets/adidas2.png"
     },
     {
         id: 2,
@@ -37,7 +37,7 @@ export const products = [
         price: 2000,
         size: "48/50 52/54  56/58  60/62",
         categoryId: 1,
-        image: "./assets/fila_kurtka.webp" 
+        image: "./assets/fila_kurtka.webp"
     },
     {
         id: 3,
@@ -46,7 +46,7 @@ export const products = [
         price: 3000,
         size: "48/50 52/54  56/58  60/62",
         categoryId: 1,
-        image: "./assets/asics_kurtka.webp" 
+        image: "./assets/asics_kurtka.webp"
     }
     ,
     {
@@ -57,7 +57,7 @@ export const products = [
         oldprice: 7000,
         size: "48/50 52/54  56/58  60/62",
         categoryId: 1,
-        image: "./assets/oodji_kurtka.webp" 
+        image: "./assets/oodji_kurtka.webp"
     },
     {
         id: 5,
@@ -66,7 +66,7 @@ export const products = [
         price: 54000,
         size: "48/50 52/54  56/58  60/62",
         categoryId: 1,
-        image: "./assets/bikkemberg_kurtka.webp" 
+        image: "./assets/bikkemberg_kurtka.webp"
     },
     {
         id: 6,
@@ -76,7 +76,7 @@ export const products = [
         oldprice: 80000,
         size: "48/50 52/54  56/58  60/62",
         categoryId: 1,
-        image: "./assets/bikkemberg_kurtka.webp" 
+        image: "./assets/bikkemberg_kurtka.webp"
     },
     {
         id: 7,
@@ -85,7 +85,7 @@ export const products = [
         price: 54000,
         size: "48/50 52/54  56/58  60/62",
         categoryId: 1,
-        image: "./assets/bikkemberg_kurtka.webp" 
+        image: "./assets/bikkemberg_kurtka.webp"
     },
     {
         id: 8,
@@ -94,6 +94,6 @@ export const products = [
         price: 54000,
         size: "48/50 52/54  56/58  60/62",
         categoryId: 1,
-        image: "./assets/bikkemberg_kurtka.webp" 
+        image: "./assets/bikkemberg_kurtka.webp"
     }
 ];

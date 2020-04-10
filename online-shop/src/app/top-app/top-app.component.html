@@ -16,14 +16,14 @@
     </table>
   </form>
   </div>
-
+    
     <div class="topnav-center">
+      
+    
 
-
-
-
+    
     </div>
-
+    
     <div class="search">
       <span class="logo"><img src="./assets/logo.png"/></span>
       <div class="text">
@@ -33,42 +33,38 @@
         </button>
         <div  class="dropdown-content">
           <div *ngFor="let category of categories index as id " class="category-list">
-
+            
             <a routerLink="/categoryList/{{category.id}}">{{category.name}}</a>
-
-
+            
+          
         </div>
         </div>
       </div>
       <a href="#Brands">Бренды</a>
       <a href="#contact">Контакты</a>
       <a href="#about">О нас</a>
-
+      
       </div>
-      <form class="input-field" action="">
+      <form class="input-field" action="">  
     <input type="text" placeholder="Search..">
     <button type="submit" class="search-btn"><img src="https://img.icons8.com/ios/50/000000/search--v1.png"/></button>
       </form>
       <span class="cart-logo">
-        <a href="/cart">
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-               width="24" height="24"
-               viewBox="0 0 172 172"
-               style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M0,0v14.33333h23.06771l28.66667,114.66667h96.97396l1.56771,-5.15104l14.78125,-49.71875l5.15104,-16.79688h-121.60937l-14.33333,-57.33333zM52.18229,71.66667h98.76563l-12.98958,43h-75.02604zM75.25,136.16667c-9.88216,0 -17.91667,8.03451 -17.91667,17.91667c0,9.88216 8.03451,17.91667 17.91667,17.91667c9.88216,0 17.91667,-8.03451 17.91667,-17.91667c0,-9.88216 -8.03451,-17.91667 -17.91667,-17.91667zM125.41667,136.16667c-9.88216,0 -17.91667,8.03451 -17.91667,17.91667c0,9.88216 8.03451,17.91667 17.91667,17.91667c9.88216,0 17.91667,-8.03451 17.91667,-17.91667c0,-9.88216 -8.03451,-17.91667 -17.91667,-17.91667z"></path></g></g>
-          </svg>
-        </a>
-
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="24" height="24"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M0,0v14.33333h23.06771l28.66667,114.66667h96.97396l1.56771,-5.15104l14.78125,-49.71875l5.15104,-16.79688h-121.60937l-14.33333,-57.33333zM52.18229,71.66667h98.76563l-12.98958,43h-75.02604zM75.25,136.16667c-9.88216,0 -17.91667,8.03451 -17.91667,17.91667c0,9.88216 8.03451,17.91667 17.91667,17.91667c9.88216,0 17.91667,-8.03451 17.91667,-17.91667c0,-9.88216 -8.03451,-17.91667 -17.91667,-17.91667zM125.41667,136.16667c-9.88216,0 -17.91667,8.03451 -17.91667,17.91667c0,9.88216 8.03451,17.91667 17.91667,17.91667c9.88216,0 17.91667,-8.03451 17.91667,-17.91667c0,-9.88216 -8.03451,-17.91667 -17.91667,-17.91667z"></path></g></g></svg>
       </span>
       <div class="pic">
-        <img src="./assets/user.png\"/>
-
+        <img src="./assets/user.png\"/> 
+  
         <button  class="btn btn-sm btn-outline-light sign" routerLink="/login" >Войти</button>
-
+              
         <button class="btn btn-sm btn-outline-light sign" routerLink="/registration">Регистрация</button>
-
+  
       </div>
     </div>
-
+   
 </div>
 
 

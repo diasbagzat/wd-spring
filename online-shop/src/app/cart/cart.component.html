@@ -3,3 +3,8 @@
   <button class="continue" routerLink="/main">Continue shopping</button>
 
 </div>
+
+<div class="cart-item" *ngFor="let product of products">
+  <span>{{ product.title }}</span>
+  <span>{{ product.description}}</span>
+</div>

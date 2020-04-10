@@ -9,7 +9,7 @@ export class FooterComponent implements OnInit {
 
   constructor() { }
   subscribe() {
-    window.alert('You have been subscribed')
+    window.alert('You have been subscribed');
   }
 
   ngOnInit(): void {

@@ -10,19 +10,19 @@ export const CATEGORY: Category[] = [
           name: 'Куртки',
           urlImg: '../assets/categ1.webp'
         },
-{
-    id: 2,
-    name: 'Футболки',
-    urlImg: '../assets/Twka.webp'
- },
-{
-    id: 3,
-     name: 'Рубашки',
-    urlImg: '../assets/Rubashka.webp'
-},
-{
-    id: 4,
-    name: 'Джинсы',
-    urlImg: '../assets/jeans.jpg'
-}
+      {
+          id: 2,
+          name: 'Футболки',
+          urlImg: '../assets/Twka.webp'
+      },
+      {
+          id: 3,
+          name: 'Рубашки',
+          urlImg: '../assets/Rubashka.webp'
+      },
+      {
+          id: 4,
+          name: 'Джинсы',
+          urlImg: '../assets/jeans.jpg'
+      }
 ];

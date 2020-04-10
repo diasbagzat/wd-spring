@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Category} from '../category';
 import {CategoriesService} from '../categories.service';
-import {products, Product} from '../product';
+import {PRODUCTS, Product} from '../product';
 
 
 @Component({
@@ -11,7 +11,7 @@ import {products, Product} from '../product';
 })
 export class CategoriesComponent implements OnInit {
   categories: Category[];
-  products = products;
+  products;
 
   images = ['../../assets/banner4.jpg', '../../assets/banner5.jpg', '../../assets/interior_casual_he_0220.webp'];
 

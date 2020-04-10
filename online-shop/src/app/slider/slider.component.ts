@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PRODUCTS, Product} from '../product';
+import {products, Product} from '../product';
 
 @Component({
   selector: 'app-slider',

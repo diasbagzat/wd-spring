@@ -25,7 +25,9 @@
       height: 1%;
   }
 
-
+label {
+  margin: 9px;
+}
 
 
 

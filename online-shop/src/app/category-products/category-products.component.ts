@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {Category} from '../category';
-import {PRODUCTS, Product} from '../product';
+import {products, Product} from '../product';
 
 import { CategoriesService } from '../categories.service';
 import { ActivatedRoute } from '@angular/router';
@@ -15,27 +15,20 @@ export class CategoryProductsComponent implements OnInit {
 
   categories: Category[];
   @Input() category: Category;
-  products;
+  products = products;
   constructor(private route: ActivatedRoute,
-              private categoriesService: CategoriesService,
+              private _categoriesService: CategoriesService,
               private location: Location
   ) { }
 
   getCategory(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.categoriesService.getCategory(id)
+    this._categoriesService.getCategory(id)
       .subscribe(category => this.category = category);
   }
   getCategories(): void {
-    this.categoriesService.getCategories().subscribe(categories => this.categories = categories);
+    this._categoriesService.getCategories().subscribe(categories => this.categories = categories);
   }
-  like() {
-    window.alert('liked')
-  }
-  dislike() {
-    window.alert('disliked')
-  }
- 
 
   ngOnInit(): void {
     console.log(this.route);

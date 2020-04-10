@@ -10,14 +10,9 @@ export interface Product {
     size: string;
     categoryId: number;
     image: string;
-
-    image2:string;
-    likes: number;
-    dislikes: number;
-
 }
 
-export const PRODUCTS: Product[] = [
+export const products = [
     {
         id: 1,
         title: 'Adidas',
@@ -31,14 +26,7 @@ export const PRODUCTS: Product[] = [
         econom: 7055,
         size: '48/50 52/54  56/58  60/62',
         categoryId: 1,
-
         image: './assets/adidas.png'
-
-        image: "./assets/adidas.png",
-        image2: "./assets/adidas2.png",
-        likes: 23,
-        dislikes: 1
-
     },
     {
         id: 2,
@@ -51,13 +39,7 @@ export const PRODUCTS: Product[] = [
         econom: 2000,
         size: '48/50 52/54  56/58  60/62',
         categoryId: 1,
-
         image: './assets/fila_kurtka.webp'
-
-        image: "./assets/fila_kurtka.webp",
-        likes: 23,
-        dislikes: 1
-
     },
     {
         id: 3,
@@ -70,13 +52,7 @@ export const PRODUCTS: Product[] = [
         econom: 2000,
         size: '48/50 52/54  56/58  60/62',
         categoryId: 1,
-
         image: './assets/asics_kurtka.webp'
-
-        image: "./assets/asics_kurtka.webp",
-        likes: 23,
-        dislikes: 1
-
     }
     ,
     {
@@ -90,13 +66,7 @@ export const PRODUCTS: Product[] = [
         econom: 2000,
         size: '48/50 52/54  56/58  60/62',
         categoryId: 1,
-
         image: './assets/oodji_kurtka.webp'
-
-        image: "./assets/oodji_kurtka.webp",
-        likes: 23,
-        dislikes: 1
-
     },
     {
         id: 5,
@@ -110,13 +80,7 @@ export const PRODUCTS: Product[] = [
         econom: 2000,
         size: '48/50 52/54  56/58  60/62',
         categoryId: 1,
-
         image: './assets/bikkemberg_kurtka.webp'
-
-        image: "./assets/bikkemberg_kurtka.webp",
-        likes: 23,
-        dislikes: 1
-
     },
     {
         id: 6,
@@ -130,13 +94,7 @@ export const PRODUCTS: Product[] = [
         econom: 2000,
         size: '48/50 52/54  56/58  60/62',
         categoryId: 1,
-
         image: './assets/bikkemberg_kurtka.webp'
-
-        image: "./assets/bikkemberg_kurtka.webp",
-        likes: 23,
-        dislikes: 1
-
     },
     {
         id: 7,

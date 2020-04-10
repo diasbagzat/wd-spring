@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {CategoriesService} from '../categories.service';
 import {Category} from '../category';
-import {PRODUCTS, Product} from '../product';
+import {products, Product} from '../product';
 
 @Component({
   selector: 'app-category-list',
@@ -10,7 +10,7 @@ import {PRODUCTS, Product} from '../product';
 })
 export class CategoryListComponent implements OnInit {
 
-  products;
+  products = products;
   categories: Category[];
 
   constructor(private categoryService: CategoriesService) { }

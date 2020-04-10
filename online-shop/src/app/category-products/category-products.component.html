@@ -54,7 +54,15 @@
             <h5 *ngIf="product.oldprice" id="price">
                 Скидка: <del>{{product.oldprice}} KZT </del>
             </h5>
+            <div>
 
+            <h5 *ngIf="product.likes">
+                <button class="btn" (click)="like()"><i class="fa fa-thumbs-up" aria-hidden="true"></i></button><h4 class="like">{{product.likes}}</h4>
+            </h5>
+            <h5 *ngIf="product.dislikes">
+                <button class="btn" (click)="dislike()"><i class="fa fa-thumbs-down" aria-hidden="true"></i></button><h4 class="dislike">{{product.dislikes}}</h4>
+            </h5>
+            
             <a  [title]="product.title + ' details'" [routerLink]="['/products', productId]">
                 <h6>{{product.title}}</h6>
                 </a>

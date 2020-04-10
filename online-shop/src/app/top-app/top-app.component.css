@@ -10,7 +10,7 @@
   .topnav-left {
       display: flex;
       flex-direction: row;
-      justify-content: left;    
+      justify-content: left;
       align-items: baseline;
       margin-right: 35%;
       margin-bottom: 0;
@@ -20,14 +20,14 @@
   }
 
   .pic img {
-      
+
       width: 1%;
       height: 1%;
   }
 
-  
-  
-  
+
+
+
 
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -40,16 +40,16 @@
     margin-left: 5px;
     margin-right: 5px;
   }
-  
+
   /* Change the color of links on hover */
   .topnav a:hover {
     color: rgb(255, 255, 255);
   }
-  
+
 
 
   .logo {
-    margin-right: 20px;
+    margin-right: 50px;
   }
 
   .dropdown {
@@ -59,30 +59,30 @@
     margin-left: 0px;
     width: 120px;
   }
-  
+
   .dropdown:hover {
     overflow: visible;
   }
-  
+
   /* Dropdown button */
   .dropdown .dropbtn {
     font-size: 15px;
     border: none;
     outline: none;
     color:white;
-    
+
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
   }
-  
+
   /* Add a red background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: black;
     color: white;
-    
+
   }
-  
+
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: block;
@@ -94,10 +94,10 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
+
   /* Links inside the dropdown */
   .dropdown-content a {
-    
+
     float: none;
     color: black;
     padding: 12px 16px;
@@ -105,16 +105,16 @@
     display: block;
     text-align: left;
   }
-  
+
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
     color:white;
     background-color: red;
   }
-  
+
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
-    
+
     display: block;
   }
 
@@ -122,7 +122,7 @@
     cursor: pointer;
     margin-bottom: 0px;
     color:black;
-    
+
     margin-top: 5px;
     width: 50px;
     height: fit-content;
@@ -156,18 +156,18 @@
   }
 
 
-  
+
   .search {
     display: flex;
-    flex-direction: row; 
-    justify-content: center; 
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
     padding: 40px;
     width: 100%;
     height: 40%;
     background-color:black;
-    
+
   }
 
   .input-field {
@@ -179,7 +179,7 @@
     background-color: white;
     border-radius: 6px;
   }
-  
+
   .search-btn {
    border: 0px;
     background-color: white;

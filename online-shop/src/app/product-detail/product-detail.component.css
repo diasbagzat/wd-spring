@@ -7,13 +7,18 @@
 }
 
 .picture img {
-    width: 299px;
+    width: 400px;
 }
 
 .product-detail {
     display: flex;
     flex-direction: row;
+
     background-color: red;
+
+    background-color: white;
+  justify-content: center;
+
 }
 
 select {
@@ -26,8 +31,13 @@ select {
     margin-top: 20px;
 }
 .text {
+
     width: 250px;
     margin-left: 3%;
+
+    width: 300px;
+    margin-left: 10%;
+
     background-color: white;
     padding: 10px;
 }
@@ -78,7 +88,12 @@ select {
 }
 .title2 {
     margin-bottom: 10% ;
+    text-align: center;
 }
 .favorite {
+
     width: 53%;
+
+    width: 100%;
 }
+

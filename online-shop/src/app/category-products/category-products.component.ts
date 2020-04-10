@@ -14,28 +14,27 @@ import { Location } from '@angular/common';
 export class CategoryProductsComponent implements OnInit {
 
   categories: Category[];
-  @Input() category:Category;
-  products=products;
+
+ 
+  @Input() category: Category;
+  products = products;
   constructor(private route: ActivatedRoute,
-    private _categoriesService: CategoriesService,     
-    private location: Location
-  ) { }
+              private _categoriesService: CategoriesService,
+              private location: Location
+
+  ) 
 
   getCategory(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this._categoriesService.getCategory(id)
+
       .subscribe(category => this.category =category);
   }
-  getCategories(): void{
-    this._categoriesService.getCategories().subscribe(categories=>this.categories=categories);
-  }
-  like() {
-    window.alert('liked')
-  }
-  dislike() {
-    window.alert('disliked')
-  }
  
+  getCategories(): void {
+    this._categoriesService.getCategories().subscribe(categories => this.categories = categories);
+
+  }
 
   ngOnInit(): void {
     console.log(this.route);

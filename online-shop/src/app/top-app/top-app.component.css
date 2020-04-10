@@ -25,9 +25,16 @@
       height: 1%;
   }
 
+
   
   
-  
+
+label {
+  margin: 9px;
+}
+
+
+
 
   /* Style the links inside the navigation bar */
   .topnav a {

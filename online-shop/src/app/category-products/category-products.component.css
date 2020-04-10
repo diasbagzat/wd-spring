@@ -134,3 +134,10 @@ h2 {
     margin-bottom: 10%;
     
 }
+
+.like {
+    color: green;
+}
+.dislike {
+    color: red;
+}

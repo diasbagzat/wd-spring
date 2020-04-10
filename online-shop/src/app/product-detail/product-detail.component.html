@@ -10,10 +10,10 @@
             <p class="short">{{product.shortdesc}}</p>
             <hr>
             <div class="price-info">
-                <del *ngIf="product.oldprice">{{product.oldprice}}</del>
-                <b class="price">  {{product.price}} тг</b>
+                <del *ngIf="product.oldprice">{{product.oldprice}}</del> 
+                <b class="price">  {{product.price}} тг</b> 
                 <h6 class="sale" *ngIf="product.sale">-{{product.sale}}</h6>
-
+                
             </div>
             <p *ngIf="product.econom" class="econom">Вы экономите: {{product.econom}}</p>
             <hr>
@@ -29,9 +29,7 @@
                <option>52/54 RUS(L INT)</option>
                <option>56/58 RUS(XL INT)</option>
            </select>
-           <button type="button" class="btn btn-primary cart" (click)="addToCart(product)">
-             Добавить в корзинку
-           </button>
+           <button type="button" class="btn btn-primary cart">Добавить в корзинку</button>
            <hr>
            <div class="about">
            <h5>О товаре</h5>
@@ -45,11 +43,11 @@
             <a href="#"><img src="https://img.icons8.com/ios/28/000000/facebook.png"/></a>
             <a href="#"><img src="https://img.icons8.com/material-outlined/28/000000/twitter-squared.png"/></a>
             <a href="#"><img src="https://img.icons8.com/ios/28/000000/vk-com.png"/></a>
-
+            
         </div>
         </div>
 
-
+        
     </div>
 
     <span class="title2">

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PRODUCTS, Product} from '../product';
+import {products, Product} from '../product';
 
 @Component({
   selector: 'app-slider',
@@ -7,10 +7,10 @@ import {PRODUCTS, Product} from '../product';
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent implements OnInit {
+ 
+  products = products;
 
-  products;
-
-  images = ['../../assets/banner4.jpg', '../../assets/banner5.jpg', '../../assets/interior_casual_he_0220.webp'];
+  images = ['../../assets/banner4.jpg','../../assets/banner5.jpg', '../../assets/interior_casual_he_0220.webp']
   constructor() { }
 
   ngOnInit(): void {

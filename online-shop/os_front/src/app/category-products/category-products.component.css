@@ -83,8 +83,9 @@ h2 {
 }
 
 .content img {
-    width: 200px;
-    height: 300px;
+    width: 205px;
+    height: 295px;
+    object-fit: scale-down;
 }
 
 .content a {

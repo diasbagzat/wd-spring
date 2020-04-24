@@ -38,7 +38,7 @@ export const products = [
         likes: 23,
         dislikes: 1,
 
-        image: './assets/adidas.png'
+      
 
     },
     {
@@ -53,7 +53,7 @@ export const products = [
         likes: 23,
         dislikes: 1,
 
-        image: './assets/fila_kurtka.webp'
+        image2: './assets/fila_kurtka.webp'
 
     },
     {
@@ -68,7 +68,7 @@ export const products = [
         likes: 23,
         dislikes: 1
 
-        image: './assets/asics_kurtka.webp'
+        
 
     }
     ,
@@ -85,7 +85,7 @@ export const products = [
         likes: 23,
         dislikes: 1
 
-        image: './assets/oodji_kurtka.webp'
+      
 
     },
     {
@@ -99,8 +99,7 @@ export const products = [
         image: "./assets/bikkemberg_kurtka.webp",
         likes: 23,
         dislikes: 1,
-
-        image: "./assets/bikkemberg_kurtka.webp"
+        image2: "./assets/bikkemberg_kurtka.webp"
 
     },
     {
@@ -115,8 +114,7 @@ export const products = [
         image: "./assets/bikkemberg_kurtka.webp",
         likes: 23,
         dislikes: 1
-
-        image: './assets/bikkemberg_kurtka.webp'
+    
 
     },
     {

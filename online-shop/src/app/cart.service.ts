@@ -14,7 +14,7 @@ export class CartService {
     this.products.push(product);
   }
 
-  getProducts(): Observable<Product[]> {
+  getProducts(): Observable<any> {
     return of(products);
   }
 

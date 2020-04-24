@@ -16,13 +16,12 @@ export class CategoryProductsComponent implements OnInit {
   categories: Category[];
 
  
-  @Input() category: Category;
+  @Input() 
+  category: Category;
   products = products;
   constructor(private route: ActivatedRoute,
-              private _categoriesService: CategoriesService,
-              private location: Location
-
-  ) 
+              private _categoriesService: CategoriesService
+              ) {}
 
   getCategory(): void {
     const id = +this.route.snapshot.paramMap.get('id');

@@ -47,7 +47,31 @@
         </div>
         </div>
 
+      <div class="edit">
+          <h4>Изменить</h4>
+          <span>
+          <label>Название:</label>
+          <input [(ngModel)]="product.title" placeholder="product.title"/>
+        </span>
+       
+            <label>Цена:
+          <input [(ngModel)]="product.price" placeholder="product.title"/>
+        </label>
+        <label>Состав:
+          <input [(ngModel)]="product.material" placeholder="product.title"/>
+        </label>
+        <label>Старая цена:
+          <input [(ngModel)]="product.oldprice" placeholder="product.title"/>
+        </label>
+          <label>Разница:
+          <input [(ngModel)]="product.econom" placeholder="product.title"/>
+        </label>
+          <label>Скидка:
+          <input [(ngModel)]="product.sale" placeholder="product.title"/>
+        </label>    
 
+        <button class="btn btn-success" >Сохранить</button>
+      </div>
 
     </div>
 

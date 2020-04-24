@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {Component, OnInit} from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { FormsModule }   from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -39,6 +40,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     NgbModule,
     NgImageSliderModule,
     NoopAnimationsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

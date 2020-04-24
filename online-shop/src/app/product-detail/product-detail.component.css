@@ -2,12 +2,16 @@
 .container {
     width: 80%;
     margin-left: 10%;
-    background-color: green;
+
     font-family: 'Play', sans-serif;
 }
 
 .picture img {
     width: 400px;
+}
+
+.edit {
+    margin-left: 70px;
 }
 
 .product-detail {

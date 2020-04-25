@@ -2,7 +2,7 @@
 .container {
     width: 80%;
     margin-left: 10%;
-    background-color: green;
+    background-color: white;
     font-family: 'Play', sans-serif;
 }
 
@@ -13,7 +13,7 @@
 .product-detail {
     display: flex;
     flex-direction: row;
-    background-color: red;
+    background-color: whitesmoke;
 }
 
 select {

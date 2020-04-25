@@ -19,6 +19,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { CategoryListComponent } from './category-list/category-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CartComponent } from './cart/cart.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { CartComponent } from './cart/cart.component';
     NgbModule,
     NgImageSliderModule,
     NoopAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

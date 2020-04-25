@@ -1,6 +1,6 @@
 import json
 
-from django.http.response import JsonResponse
+from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 
@@ -13,15 +13,15 @@ def category_list(request):
     if request.method == 'GET':
         categories = Category.objects.all()
         serializer = CategorySerializer(categories, many=True)
-        return JsonResponse(serializer.data, safe=False)
+        return Response(serializer.data)
 
     elif request.method == 'POST':
         request_body = json.loads(request.body)
         serializer = CategorySerializer(data=request_body)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data)
-        return JsonResponse({'error': serializer.errors})
+            return Response(serializer.data)
+        return Response({'error': serializer.errors})
 
 
 @api_view(['GET', 'POST'])
@@ -29,33 +29,33 @@ def category_detail(request, category_id):
     try:
         category = Category.objects.get(id=category_id)
     except Category.DoesNotExist as e:
-        return JsonResponse({'error': str(e)})
+        return Response({'error': str(e)})
 
     if request.method == 'GET':
         serializer = CategorySerializer(category)
-        return JsonResponse(serializer.data, safe=False)
+        return Response(serializer.data, safe=False)
 
     elif request.method == 'PUT':
         request_body = json.loads(request.body)
         serializer = CategorySerializer(instance=category, data=request_body)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data)
-        return JsonResponse({'error': serializer.errors})
+            return Response(serializer.data)
+        return Response({'error': serializer.errors})
 
 
 class ProductsList(APIView):
     def get(self, request):
         products = Product.objects.all()
         serializer = ProductModelSerializer(products, many=True)
-        return JsonResponse(serializer.data)
+        return Response(serializer.data)
 
     def post(self, request):
         serializer = ProductModelSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data)
-        return JsonResponse({'error': serializer.errors})
+            return Response(serializer.data)
+        return Response({'error': serializer.errors})
 
 
 class ProductDetail(APIView):
@@ -63,28 +63,28 @@ class ProductDetail(APIView):
         try:
             return Product.objects.get(id=product_id)
         except Exception as e:
-            return JsonResponse({'error': str(e)})
+            return Response({'error': str(e)})
 
     def get(self, request, product_id):
         try:
             serializer = ProductModelSerializer(self.get_product(product_id))
-            return JsonResponse(serializer.data)
+            return Response(serializer.data)
         except Exception as e:
-            return JsonResponse({'error': str(e)})
+            return Response({'error': str(e)})
 
     def put(self, request, product_id):
         serializer = ProductModelSerializer(instance=self.get_product(product_id), data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data)
-        return JsonResponse({'error': serializer.errors})
+            return Response(serializer.data)
+        return Response({'error': serializer.errors})
 
     def delete(self, request, product_id):
         try:
             self.get_product(product_id).delete()
-            return JsonResponse({'delete': True})
+            return Response({'delete': True})
         except Exception as e:
-            return JsonResponse({'error': str(e)})
+            return Response({'error': str(e)})
 
 
 class CategoryProducts(APIView):
@@ -93,9 +93,9 @@ class CategoryProducts(APIView):
             category = Category.objects.get(id=category_id)
             products = category.products.all()
             serializer = ProductModelSerializer(products, many=True)
-            return JsonResponse(serializer.data)
+            return Response(serializer.data, safe=False)
         except Exception as e:
-            return JsonResponse({'error': str(e)})
+            return Response({'error': str(e)})
 
 
 # def category_products(request, category_id):

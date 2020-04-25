@@ -4,6 +4,8 @@ import {CategoriesService} from '../categories.service';
 import {products, Product} from '../product';
 
 
+
+
 @Component({
   selector: 'app-categories',
   templateUrl: './categories.component.html',

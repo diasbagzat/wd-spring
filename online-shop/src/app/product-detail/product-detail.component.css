@@ -2,18 +2,35 @@
 .container {
     width: 80%;
     margin-left: 10%;
+<<<<<<< HEAD
     background-color: white;
+=======
+
+>>>>>>> d9abf7ac6552ab922b83d5f2509f13adb04ecdf8
     font-family: 'Play', sans-serif;
 }
 
 .picture img {
-    width: 299px;
+    width: 400px;
+}
+
+.edit {
+    margin-left: 70px;
 }
 
 .product-detail {
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     background-color: whitesmoke;
+=======
+
+    background-color: red;
+
+    background-color: white;
+  justify-content: center;
+
+>>>>>>> d9abf7ac6552ab922b83d5f2509f13adb04ecdf8
 }
 
 select {
@@ -26,8 +43,13 @@ select {
     margin-top: 20px;
 }
 .text {
+
     width: 250px;
     margin-left: 3%;
+
+    width: 300px;
+    margin-left: 10%;
+
     background-color: white;
     padding: 10px;
 }
@@ -78,7 +100,12 @@ select {
 }
 .title2 {
     margin-bottom: 10% ;
+    text-align: center;
 }
 .favorite {
+
     width: 53%;
+
+    width: 100%;
 }
+

@@ -2,9 +2,9 @@
 
     <div *ngIf="product" class="product-detail">
         <div class="picture">
-        <img src="{{product.image}}"/>
-        <img src="{{product.image2}}"/>
-    </div>
+          <img src="{{product.image}}"/>
+          <img src="{{product.image2}}"/>
+        </div>
         <div class="text">
             <h4>{{product.title}}</h4>
             <p class="short">{{product.shortdesc}}</p>
@@ -47,13 +47,38 @@
         </div>
         </div>
 
-        
+      <div class="edit">
+          <h4>Изменить</h4>
+          <span>
+          <label>Название:</label>
+          <input [(ngModel)]="product.title" placeholder="product.title"/>
+        </span>
+       
+            <label>Цена:
+          <input [(ngModel)]="product.price" placeholder="product.title"/>
+        </label>
+        <label>Состав:
+          <input [(ngModel)]="product.material" placeholder="product.title"/>
+        </label>
+        <label>Старая цена:
+          <input [(ngModel)]="product.oldprice" placeholder="product.title"/>
+        </label>
+          <label>Разница:
+          <input [(ngModel)]="product.econom" placeholder="product.title"/>
+        </label>
+          <label>Скидка:
+          <input [(ngModel)]="product.sale" placeholder="product.title"/>
+        </label>    
+
+        <button class="btn btn-success" >Сохранить</button>
+      </div>
+
     </div>
 
     <span class="title2">
         <h3>Популярное</h3>
-        </span>
+    </span>
     <div class="favorite">
-    <ng-image-slider [images]="products" #nav></ng-image-slider>
+        <ng-image-slider [images]="products" #nav></ng-image-slider>
     </div>
 </div>

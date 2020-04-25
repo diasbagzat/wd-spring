@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Category} from '../category';
+import {Category} from '../models';
 import {CategoriesService} from '../categories.service';
 import {products, Product} from '../product';
 
@@ -18,9 +18,9 @@ export class CategoriesComponent implements OnInit {
   images = ['../../assets/banner4.jpg','../../assets/banner5.jpg', '../../assets/interior_casual_he_0220.webp']
 
   
-  constructor(private categoryService: CategoriesService) { }
+  constructor(public categoryService: CategoriesService) { }
   getCategories(): void{
-    this.categoryService.getCategories().subscribe(categories=>this.categories=categories);
+    this.categoryService.getCategories().subscribe(categories => this.categories = categories);
   }
   ngOnInit(): void {
     this.getCategories();

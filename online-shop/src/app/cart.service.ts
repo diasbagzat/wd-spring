@@ -1,25 +1,29 @@
 import { Injectable } from '@angular/core';
 import {Product, products} from './product';
 import {Observable, of} from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
-  products: Product[]
+ 
+  items = [];
+  // products = products;
+  // product: Product[]
 
   constructor() { }
 
   addToCart(product) {
-    this.products.push(product);
+    this.items.push(product);
   }
 
-  getProducts(): Observable<any> {
-    return of(products);
+  getProducts() {
+    return this.items;
   }
 
   clearCart() {
-    this.products = [];
-    return this.products;
+    this.items = [];
+    return this.items;
   }
 }

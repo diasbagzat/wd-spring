@@ -19,7 +19,7 @@ from api.view_cbv import CategoryListAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('api.urls')),
+    path('api/', include('api.urls')),
 
     # path('categories/<int:category_id>/', category_detail),
 ]

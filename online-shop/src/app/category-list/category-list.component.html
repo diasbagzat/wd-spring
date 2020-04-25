@@ -5,7 +5,7 @@
 
     <div *ngFor="let category of categories index as id" class="category-list">
 
-        <img src="{{category.urlImg}}" width="200px">
+        <img src="{{category.imageUrl}}" width="200px">
         <div class="category-name">
         <h5><a routerLink="/categoryList/{{category.id}}">{{category.name}}</a></h5>
         </div>

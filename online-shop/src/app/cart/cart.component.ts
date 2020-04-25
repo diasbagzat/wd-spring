@@ -16,11 +16,11 @@ export class CartComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getProducts();
+    // this.getProducts();
   }
 
-  getProducts(): void {
-    this.cartService.getProducts().subscribe(products => this.products = products);
-  }
+  // getProducts(): void {
+  //   this.cartService.getProducts().subscribe(products => this.products = products);
+  // }
 
 }

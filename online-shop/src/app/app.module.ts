@@ -19,6 +19,8 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { CategoryListComponent } from './category-list/category-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     SignInComponent,
     SignUpComponent,
     CategoryListComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    CartPageComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     NgImageSliderModule,
     NoopAnimationsModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

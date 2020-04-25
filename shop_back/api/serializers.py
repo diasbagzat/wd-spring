@@ -6,13 +6,15 @@ from api.models import Category, Product
 class CategorySerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     name = serializers.CharField()
+    imageUrl = serializers.CharField()
 
     def create(self, validated_data):
-        category = Category.objects.create(name=validated_data.get('name'))
+        category = Category.objects.create(name=validated_data.get('name'), imageUrl=validated_data.get('imageUrl'))
         return category
 
     def update(self, instance, validated_data):
         instance.name = validated_data.get('name', instance.name)
+        instance.imageUrl = validated_data.get('imageUrl', instance.name)
         instance.save()
         return instance
 
@@ -23,7 +25,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = ('id', 'name', 'price', 'description')
+        fields = ('name', 'price', 'description')
 
 
 class CategoryProductSerializer(serializers.ModelSerializer):

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Category} from '../category';
+import {Category} from '../models';
 import {products, Product} from '../product';
 
 import { CategoriesService } from '../categories.service';
@@ -35,7 +35,7 @@ export class CategoryProductsComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
+   ngOnInit(): void {
     console.log(this.route);
     this.getCategory();
     this.getCategories();

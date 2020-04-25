@@ -1,0 +1,46 @@
+<h3>Корзина</h3>
+
+
+<div class="items" *ngFor="let item of items">
+ <table>
+   <tr>
+
+  <td><img src="{{item.image}}" alt=""></td>
+  <td><span>{{item.title }} </span></td>
+  <td><span>{{item.price}} Тг</span></td>
+</tr>
+</table> 
+</div>
+
+<div class="order-form">
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Имя</label>
+        <input type="text" class="form-control" id="inputEmail4" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Фамилия</label>
+        <input type="text" class="form-control" id="inputPassword4" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Адрес</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Толе Би, 59" required>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Телефон</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="+7-777-777-77-77" required>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Город</label>
+        <input type="text" class="form-control" id="inputCity" required>
+      </div>
+      
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Отправить заказ</button>
+  </form>
+</div>
+

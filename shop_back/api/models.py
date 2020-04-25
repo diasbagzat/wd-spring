@@ -15,8 +15,15 @@ class User(models.Model):
         }
 
 
+def upload_path(instance, filename):
+    return '/'.join(['images'], str(instance.name), filename)
+
+
 class Category(models.Model):
     name = models.CharField(max_length=300)
+    imageUrl = models.CharField(max_length=200, default="")
+
+    # image = models.ImageField(blank=True, null=True, upload_to=upload_path)
 
     class Meta:
         verbose_name = 'Category'

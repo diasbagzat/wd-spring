@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Josefin+Sans:wght@700&display=swap');
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 15%;
+    width: 60%;
+
+    font-family: 'Gotu', sans-serif;
+    float: right;
+}
+
+.filter {
+    margin-left: 30%;
+    margin-bottom: 1%;
+    width: 800px;
+}
+.filter input {
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.filtb {
+    margin-right: 10px;
+}
+
+.color {
+    margin-left: 10px;
+}
+
+.color select {
+    margin-left: 5px;
+}
+
+.sale {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color:rgb(255, 60, 0);
+    height: 50px;
+}
+
+.sale p {
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+.path {
+    color: rgb(206, 204, 204);
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+
+.path a {
+    color: rgb(206, 204, 204);
+}
+
+h2 {
+    margin-top: 2%;
+    margin-left: 5%;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.content {
+
+    width: 210px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.content p {
+    font-size: 12px;
+    color: rgb(155, 153, 153);
+}
+
+.content img {
+    width: 200px;
+    height: 300px;
+}
+
+.content a {
+    text-decoration: none;
+    color: gray;
+}
+
+.content a:hover {
+    color: rgb(201, 125, 125);
+}
+
+.content:hover {
+    border: 1px solid rgb(187, 185, 185);
+    border-radius: 5px;
+}
+
+.text-content {
+    margin-top: 5%;
+}
+
+.category {
+    margin-left: 5%;
+    width: 20%;
+
+}
+
+.category li {
+    list-style-type: none;
+    border-radius: 3px;
+    padding-left: 5px;
+    margin-top: -5%;
+}
+
+.category a {
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.category a:hover {
+    color: rgb(224, 97, 97);
+    text-decoration: none;
+}
+
+.category h6 {
+    margin-bottom: 10%;
+
+}

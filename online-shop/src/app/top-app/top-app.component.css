@@ -1,0 +1,259 @@
+.topnav {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  height: 200px;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.topnav-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: baseline;
+  margin-right: 35%;
+  margin-bottom: 0;
+  margin-top: 0.25%;
+  width: 60%;
+
+}
+
+.pic img {
+
+  width: 1%;
+  height: 1%;
+}
+
+
+label {
+  margin: 9px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+.logo {
+  margin-right: 20px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  margin-left: 0px;
+  width: 120px;
+}
+
+.dropdown:hover {
+  overflow: visible;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+  color: white;
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: block;
+  border-radius: 5px;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding-left: 25px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  color: white;
+  background-color: red;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+
+  display: block;
+}
+
+#pic-a {
+  cursor: pointer;
+  margin-bottom: 0px;
+  color: black;
+
+  margin-top: 5px;
+  width: 50px;
+  height: fit-content;
+  padding: 0px;
+  font-size: 14px;
+}
+
+
+.pic {
+  margin-left: 2%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.pic img {
+  margin-right: 5px;
+  margin-top: 2px;
+  width: 25px;
+  height: 20px;
+}
+
+.sign {
+  width: 90px;
+  font-size: 13px;
+  margin-left: 1%;
+  padding: 0px;
+}
+
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 40px;
+  width: 100%;
+  height: 40%;
+  background-color: black;
+
+}
+
+.input-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.search-btn {
+  border: 0px;
+  background-color: white;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 30px;
+  width: 35px;
+  border-radius: 6px;
+}
+
+.search button img {
+  margin-top: 0px;
+  width: 25px;
+  height: 25px;
+}
+
+.search button:hover {
+  background-color: yellow;
+  color: rgb(9, 97, 21);
+}
+
+.search input {
+  border: 1px;
+  padding-left: 10px;
+  width: 300px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.cart-logo {
+  margin-left: 30px;
+
+}
+
+.cart-logo svg {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.cart-logo svg:hover {
+  background-color: rgb(255, 0, 13);
+  cursor: pointer;
+}
+
+.category {
+  position: absolute;
+  width: 25%;
+  height: 70%;
+  margin-left: 5%;
+  margin-top: 8%;
+}
+
+.category a {
+  color: black;
+}
+
+
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text a {
+  width: 100px;
+  margin-left: -15px;
+  margin-right: 0px;
+}
+
+.text a:hover {
+  color: gray;
+}

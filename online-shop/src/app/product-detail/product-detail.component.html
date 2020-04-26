@@ -1,0 +1,84 @@
+<div class="container">
+
+    <div *ngIf="product" class="product-detail">
+        <div class="picture">
+          <img src="{{product.image}}"/>
+          <img src="{{product.image2}}"/>
+        </div>
+        <div class="text">
+            <h4>{{product.title}}</h4>
+            <p class="short">{{product.shortdesc}}</p>
+            <hr>
+            <div class="price-info">
+                <del *ngIf="product.oldprice">{{product.oldprice}}</del> 
+                <b class="price">  {{product.price}} тг</b> 
+                <h6 class="sale" *ngIf="product.sale">-{{product.sale}}</h6>
+                
+            </div>
+            <p *ngIf="product.econom" class="econom">Вы экономите: {{product.econom}}</p>
+            <hr>
+
+            <div class="trans">
+                <P> <img src="https://img.icons8.com/dotty/30/000000/car.png"/> По адресу, курьером — с примеркой, всегда бесплатно</P>
+                <p><img src="https://img.icons8.com/wired/30/000000/mailbox-opened-flag-down.png"/> Почтой — всегда бесплатно</p>
+            </div>
+           <select>
+               <option>40/42 RUS(XS INT)</option>
+               <option>44/46 RUS(S INT)</option>
+               <option>48/50 RUS(M INT)</option>
+               <option>52/54 RUS(L INT)</option>
+               <option>56/58 RUS(XL INT)</option>
+           </select>
+           <button type="button" class="btn btn-primary cart">Добавить в корзинку</button>
+           <hr>
+           <div class="about">
+           <h5>О товаре</h5>
+           <p>{{product.description}}</p>
+           <p><b>Состав:</b> {{product.material}}</p>
+        </div>
+        <hr>
+        <div class="socnet">
+            <h6>Поделиться</h6>
+            <a href="#"><img src="https://img.icons8.com/metro/24/000000/instagram-new.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/ios/28/000000/facebook.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/material-outlined/28/000000/twitter-squared.png"/></a>
+            <a href="#"><img src="https://img.icons8.com/ios/28/000000/vk-com.png"/></a>
+            
+        </div>
+        </div>
+
+      <div class="edit">
+          <h4>Изменить</h4>
+          <span>
+          <label>Название:</label>
+          <input [(ngModel)]="product.title" placeholder="product.title"/>
+        </span>
+       
+            <label>Цена:
+          <input [(ngModel)]="product.price" placeholder="product.title"/>
+        </label>
+        <label>Состав:
+          <input [(ngModel)]="product.material" placeholder="product.title"/>
+        </label>
+        <label>Старая цена:
+          <input [(ngModel)]="product.oldprice" placeholder="product.title"/>
+        </label>
+          <label>Разница:
+          <input [(ngModel)]="product.econom" placeholder="product.title"/>
+        </label>
+          <label>Скидка:
+          <input [(ngModel)]="product.sale" placeholder="product.title"/>
+        </label>    
+
+        <button class="btn btn-success" >Сохранить</button>
+      </div>
+
+    </div>
+
+    <span class="title2">
+        <h3>Популярное</h3>
+    </span>
+    <div class="favorite">
+        <ng-image-slider [images]="products" #nav></ng-image-slider>
+    </div>
+</div>

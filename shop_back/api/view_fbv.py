@@ -2,7 +2,7 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from api.models import Product
+from api.models import Product, Category
 from api.serializers import ProductSerializer
 
 
@@ -45,3 +45,16 @@ def product_detail(request, id):
         product.delete()
 
         return Response({'deleted': True})
+
+
+@api_view(('GET',))
+def products_by_category(request, category_id):
+    try:
+        categories = Category.objects.get(id=category_id)
+    except Category.DoesNotExist as e:
+        return Response({'error': str(e)})
+
+    if request.method == 'GET':
+        products = categories.products.all()
+        serializer = ProductSerializer(products, many=True)
+        return Response(serializer.data)

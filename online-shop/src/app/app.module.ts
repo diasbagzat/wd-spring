@@ -20,7 +20,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { CategoryListComponent } from './category-list/category-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { AdminComponent } from './admin/admin.component'
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {HttpClientModule} from '@angular/common/http'
     SignUpComponent,
     CategoryListComponent,
     ProductDetailComponent,
-    CartPageComponent
+    CartPageComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

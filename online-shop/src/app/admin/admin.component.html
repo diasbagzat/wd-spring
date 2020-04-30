@@ -1,0 +1,69 @@
+<div class="container">
+    <h4>Товары</h4>
+    <ul *ngFor="let product of products">  
+        <li (click)="onSelect(product)">{{product.name}}<span class="close" (click)="deleteProduct(product.id)">x</span></li>
+    </ul>
+
+    
+</div>
+<div class="edit">
+    <h4>Изменить</h4>
+    
+    <label>Название:</label>
+    <input [(ngModel)]="selectedProd.name" />
+  
+ 
+      <label>Цена:</label>
+    <input [(ngModel)]="selectedProd.price" />
+  
+  
+  <label>Старая цена:</label>
+    <input [(ngModel)]="selectedProd.oldPrice" />
+  
+    <label>Разница:</label>
+    <input [(ngModel)]="selectedProd.econom" />
+  
+    <label>Скидка:</label> 
+    <input [(ngModel)]="selectedProd.sale" />
+     
+    <label>Описание:</label> 
+    <input [(ngModel)]="selectedProd.description" >
+
+  <button class="btn btn-success put"  >Редактировать</button>
+</div>
+
+<div class="Добавить">
+  <h4>Изменить</h4>
+  <form #myForm="ngForm">
+  <label>Название:</label>
+  <input #name />
+
+
+    <label>Цена:</label>
+  <input #price />
+
+
+<label>Старая цена:</label>
+  <input #oldPrice />
+
+  
+  <label>Category:</label>
+  <input #category_id />
+  <label>Image:</label> 
+  <input #image />
+  <label>Image:</label> 
+  <input #sale />
+  <label>Image:</label> 
+  <input #econom />
+  <label>Image:</label> 
+  <input #description />
+  <label>Image:</label> 
+  <input #shortDesc />
+  <label>Image:</label> 
+  <label>Size:</label> 
+  <input #size />
+
+<button  class="btn btn-success put" (click)="addProduct(name.value, price.value, oldPrice.value, category_id.value, image.value, size.value, description.value,  shortDesc.value,  sale.value,  econom.value ); name.value='';price.value=0; oldPrice.value=0; category_id.value=1; image.value=''; size.value=''; description.value='';  shortDesc.value='';  sale.value='';  econom.value=0 ">Добавить</button>
+
+</form>
+</div>

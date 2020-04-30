@@ -1,8 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {Category} from '../models';
-import {products, Product} from '../product';
+//import {products, Product} from '../product';
+import {Product} from '../models'
 
 import { CategoriesService } from '../categories.service';
+import {ProductService} from '../product.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -13,32 +15,38 @@ import { Location } from '@angular/common';
 })
 export class CategoryProductsComponent implements OnInit {
 
-  categories: Category[];
-
- 
-  @Input() 
+  categories: Category[] = [];
   category: Category;
-  products = products;
+  products: Product[] =[];
+ 
+//  @Input() 
+  
+  //products = products;
   constructor(private route: ActivatedRoute,
-              private _categoriesService: CategoriesService
+              private categoryService: CategoriesService,
+              private productService: ProductService,
               ) {}
 
-  getCategory(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
-    this._categoriesService.getCategory(id)
-
-      .subscribe(category => this.category =category);
-  }
+              // getCategory() {
+              //   const id = +this.route.snapshot.paramMap.get('id');
+            
+              //   this.categoryService.getCategory(id).subscribe(category => this.category = category);
+              // }
  
   getCategories(): void {
-    this._categoriesService.getCategories().subscribe(categories => this.categories = categories);
+    this.categoryService.getCategories().subscribe(categories => this.categories = categories);
 
+  }
+
+  getCategoryProducts() : void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.productService.getCategoryProducts(id).subscribe(products => this.products = products);
   }
 
    ngOnInit(): void {
-    console.log(this.route);
-    this.getCategory();
-    this.getCategories();
+    this.getCategoryProducts();
+    // this.getCategory();
+
   }
 
 }

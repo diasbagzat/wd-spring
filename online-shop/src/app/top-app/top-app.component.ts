@@ -14,6 +14,10 @@ export class TopAppComponent implements OnInit {
   getCategories(): void{
     this.categoryService.getCategories().subscribe(categories=>this.categories=categories);
   }
+  logout() {
+    localStorage.clear();
+    alert('Logout');
+  }
   ngOnInit(): void {
     this.getCategories();
   }

@@ -51,11 +51,11 @@ style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-w
 
 </span>
       <div class="pic">
-        <img src="./assets/user.png\"/> 
-  
+        <img src="./assets/user.png\" routerLink="/admin" /> 
+        
         <button  class="btn btn-sm btn-outline-light sign" routerLink="/login" >Войти</button>
               
-        <button class="btn btn-sm btn-outline-light sign" routerLink="/registration">Регистрация</button>
+        <button class="btn btn-sm btn-outline-light sign" (click)="logout()">Выйти</button>
   
       </div>
     </div>

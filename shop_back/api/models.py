@@ -15,15 +15,9 @@ class User(models.Model):
         }
 
 
-def upload_path(instance, filename):
-    return '/'.join(['images'], str(instance.name), filename)
-
-
 class Category(models.Model):
     name = models.CharField(max_length=300)
     imageUrl = models.CharField(max_length=200, default="")
-
-    # image = models.ImageField(blank=True, null=True, upload_to=upload_path)
 
     class Meta:
         verbose_name = 'Category'
@@ -40,6 +34,12 @@ class Product(models.Model):
     name = models.CharField(max_length=300)
     price = models.FloatField(default=1000)
     description = models.TextField(default='')
+    sale = models.CharField(max_length=10, default="", null=True)
+    shortDesc = models.TextField(default="")
+    oldPrice = models.FloatField(default=0, null=True)
+    size = models.CharField(max_length=300, default="")
+    econom = models.FloatField(default=0)
+    image = models.CharField(max_length=200, default="")
     category = models.ForeignKey(Category, on_delete=models.CASCADE,
                                  related_name='products')
 
@@ -55,14 +55,29 @@ class Product(models.Model):
             'id': self.id,
             'name': self.name,
             'price': self.price,
-            'description': self.description
+            'description': self.description,
+            'sale': self.sale,
+            'shortDesc': self.shortDesc,
+            'oldPrice': self.oldPrice,
+            'size': self.size,
+            'econom': self.econom,
+            'image': self.image
         }
 
 
 class Order(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='orders')
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    price = models.FloatField(default='0.0')
+    price = models.FloatField(default=0)
     orderDate = models.DateField()
-    discount = models.FloatField()
+    discount = models.FloatField(default=0)
     address = models.TextField()
+
+    def to_json(self):
+        return {
+            'id': self.id,
+            'price': self.price,
+            'orderDate': self.orderDate,
+            'discount': self.discount,
+            'address': self.discount
+        }

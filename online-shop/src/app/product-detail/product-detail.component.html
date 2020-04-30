@@ -3,14 +3,13 @@
     <div *ngIf="product" class="product-detail">
         <div class="picture">
           <img src="{{product.image}}"/>
-          <img src="{{product.image2}}"/>
         </div>
         <div class="text">
-            <h4>{{product.title}}</h4>
-            <p class="short">{{product.shortdesc}}</p>
+            <h4>{{product.name}}</h4>
+            <p class="short">{{product.shortDesc}}</p>
             <hr>
             <div class="price-info">
-                <del *ngIf="product.oldprice">{{product.oldprice}}</del> 
+                <del *ngIf="product.oldPrice">{{product.oldPrice}}</del> 
                 <b class="price">  {{product.price}} тг</b> 
                 <h6 class="sale" *ngIf="product.sale">-{{product.sale}}</h6>
                 
@@ -34,7 +33,6 @@
            <div class="about">
            <h5>О товаре</h5>
            <p>{{product.description}}</p>
-           <p><b>Состав:</b> {{product.material}}</p>
         </div>
         <hr>
         <div class="socnet">
@@ -51,17 +49,15 @@
           <h4>Изменить</h4>
           <span>
           <label>Название:</label>
-          <input [(ngModel)]="product.title" placeholder="product.title"/>
+          <input [(ngModel)]="product.name" placeholder="product.title"/>
         </span>
        
             <label>Цена:
           <input [(ngModel)]="product.price" placeholder="product.title"/>
         </label>
-        <label>Состав:
-          <input [(ngModel)]="product.material" placeholder="product.title"/>
-        </label>
+        
         <label>Старая цена:
-          <input [(ngModel)]="product.oldprice" placeholder="product.title"/>
+          <input [(ngModel)]="product.oldPrice" placeholder="product.title"/>
         </label>
           <label>Разница:
           <input [(ngModel)]="product.econom" placeholder="product.title"/>

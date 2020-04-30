@@ -2,11 +2,9 @@
 .container {
     width: 80%;
     margin-left: 10%;
-<<<<<<< HEAD
-    background-color: white;
-=======
 
->>>>>>> d9abf7ac6552ab922b83d5f2509f13adb04ecdf8
+    background-color: white;
+
     font-family: 'Play', sans-serif;
 }
 
@@ -21,16 +19,16 @@
 .product-detail {
     display: flex;
     flex-direction: row;
-<<<<<<< HEAD
+
     background-color: whitesmoke;
-=======
+
 
     background-color: red;
 
     background-color: white;
   justify-content: center;
 
->>>>>>> d9abf7ac6552ab922b83d5f2509f13adb04ecdf8
+
 }
 
 select {

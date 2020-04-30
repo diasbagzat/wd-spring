@@ -21,16 +21,16 @@ class CategorySerializer(serializers.Serializer):
 
 class ProductSerializer(serializers.ModelSerializer):
     #category = CategorySerializer(read_only=True)
-    #category_id = serializers.IntegerField(write_only=True)
+    category_id = serializers.IntegerField(write_only=True)
 
     class Meta:
         model = Product
-        fields = ('name', 'price', 'description')
+        fields = ('id', 'name', 'price', 'description', 'category_id', 'sale', 'image', 'shortDesc', 'oldPrice', 'size', 'econom')
 
 
 class CategoryProductSerializer(serializers.ModelSerializer):
-        products = ProductSerializer(many=True, read_only=True)
-        class Meta:
-            model = Category
-            fields = ('name', 'products')
+    products = ProductSerializer(many=True, read_only=True)
 
+    class Meta:
+        model = Category
+        fields = ('name', 'products')

@@ -46,7 +46,7 @@
     
         <img src="{{category.imageUrl}}" width="200px">
         <div class="category-name">
-        <h5><a routerLink="'/category/' + category.id">{{category.name}}</a></h5>
+        <h5><a routerLink="/categoryList/{{category.id}}" (click)="getCategoryProducts(category.id)">{{category.name}}</a></h5>
         </div>
     </div>
 </div>  

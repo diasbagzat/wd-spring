@@ -1,9 +1,9 @@
 <div class="sale"><p>По 9 апреля: Скидки до 40%</p></div>
 <div class="path">
-<p><a href="#">Главная</a>/<a href="">{{category.name}}</a></p>
+<!-- <p><a href="#">Главная</a>/<a href="">{{category.name}}</a></p> -->
 </div>
 
-<h2>{{category.name}}</h2>
+<!-- <h2>{{category.name}}</h2> -->
 
 <div class="filter">
    
@@ -43,27 +43,26 @@
 
 <div class="container">
 
-<div *ngFor="let product of products; index as productId">
-    <div *ngIf="product.categoryId==category.id">
+<div *ngFor="let product of products">
         <div class="content">
             <img src="{{product.image}}">
             <div class="text-content">
-            <h5 *ngIf="product.price" id="price">
+            <h5  id="price">
                 Цена: {{product.price}} KZT
             </h5>
-            <h5 *ngIf="product.oldprice" id="price">
+            <h5 *ngIf="product.oldprice>0" id="price">
                 Скидка: <del>{{product.oldprice}} KZT </del>
             </h5>
 
-            <a  [title]="product.title + ' details'" [routerLink]="['/products', productId]">
-                <h6>{{product.title}}</h6>
+            <a  [title]="product.title + ' details'" routerLink="/products/{{product.id}}">
+                <h6>{{product.name}} </h6>
                 </a>
-            <p *ngIf="product.description">
-                <b>Размер:</b> {{ product.size }}
-            </p>
+            
+                <b>Размер:</b> {{ product.size}}
+            
             </div>
         </div>
-    </div>
+   
 </div>
 
 

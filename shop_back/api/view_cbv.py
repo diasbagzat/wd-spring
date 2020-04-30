@@ -1,9 +1,10 @@
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework import status, generics, viewsets
 
 from api.models import Category
-from api.serializers import CategorySerializer, CategoryProductSerializer
+from api.serializers import CategorySerializer, CategoryProductSerializer, ProductSerializer
 
 
 class CategoryListAPIView(APIView):
@@ -23,9 +24,9 @@ class CategoryListAPIView(APIView):
 
 
 class CategoryDetailAPIView(APIView):
-    def get_object(self, id):
+    def get_object(self, category_id):
         try:
-            return Category.objects.get(id=id)
+            return Category.objects.get(id=category_id)
         except Category.DoesNotExist as e:
             return Response({'error': str(e)})
 
@@ -49,3 +50,13 @@ class CategoryDetailAPIView(APIView):
         return Response({'deleted': True})
 
 
+# class CategoryProductList(generics.ListCreateAPIView):
+#     serializer_class = ProductSerializer
+#
+#     def get_queryset(self):
+#         try:
+#             category = Category.objects.get(id=self.kwargs.get('pk'))
+#         except Category.DoesNotExist as e:
+#             return Response({'Error': str(e)})
+#         queryset = category.products.all()
+#         return queryset
